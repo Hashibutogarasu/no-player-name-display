@@ -10,7 +10,7 @@
 	"contact": {
 		"sources": "https://github.com/Hashibutogarasu/NoPlayerNameDisplay"
 	},
-	"license": "MIT",
+	"license": "CC0 1.0 Universal",
 	"icon": "assets/no-player-name-display/icon.png",
 	"environment": "client",
 	"entrypoints": {
