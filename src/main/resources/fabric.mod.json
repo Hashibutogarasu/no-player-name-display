@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "no-player-name-display",
+	"version": "${version}",
+	"name": "No Player Name Display",
+	"description": "This mod hides the player name tag. It is useful for content creators who want to hide their name in videos.",
+	"authors": [
+		"Hashibutogarasu"
+	],
+	"contact": {
+		"sources": "https://github.com/Hashibutogarasu/NoPlayerNameDisplay"
+	},
+	"license": "MIT",
+	"icon": "assets/no-player-name-display/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.karasu256.npnd.NoPlayerNameDisplayClient"
+		],
+		"modmenu": [
+			"com.karasu256.npnd.ModMenuIntegration"
+		]
+	},
+	"mixins": [
+		"no-player-name-display.mixins.json",
+		{
+			"config": "no-player-name-display.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
