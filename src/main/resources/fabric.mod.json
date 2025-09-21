@@ -35,8 +35,8 @@
 		"fabric-api": "*"
 	},
 	"suggests": {
-		"fabric-api": "~0.119.4+1.21.4",
-        "cloth-config": "~17.0.142",
-        "modmenu": "~13.0.0"
+		"fabric-api": "~${fabric_api_base_version}",
+        "cloth-config": "~${cloth_config_base_version}",
+        "modmenu": "~${modmenu_base_version}"
 	}
 }
