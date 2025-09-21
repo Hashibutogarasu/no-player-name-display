@@ -79,7 +79,7 @@ modrinth {
 	projectId = "noplayernamedisplay"
 	versionNumber = project.mod_version
 	versionType = "release"
-	uploadFile = jar
+	uploadFile = remapJar
 	gameVersions = ["1.21.1"]
 	loaders = ["fabric"]
 	dependencies {
