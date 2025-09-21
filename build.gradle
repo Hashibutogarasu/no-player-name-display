@@ -50,14 +50,19 @@ processResources {
 	inputs.property "version", project.version
 	inputs.property "fabric_api_base_version", project.fabric_api_base_version
 	inputs.property "cloth_config_base_version", project.cloth_config_base_version
-	inputs.property "modmenu_base_version", project.modmenu_base_version
+    inputs.property "modmenu_base_version", project.modmenu_base_version
+    inputs.property "minecraft_version", project.minecraft_version
+    inputs.property "loader_version", project.loader_version
+
 
 	filesMatching("fabric.mod.json") {
 		expand([
 			"version": project.version,
 			"fabric_api_base_version": project.fabric_api_base_version,
 			"cloth_config_base_version": project.cloth_config_base_version,
-			"modmenu_base_version": project.modmenu_base_version
+            "modmenu_base_version": project.modmenu_base_version,
+            "minecraft_version": project.minecraft_version,
+            "loader_version": project.loader_version
 		])
 	}
 }
